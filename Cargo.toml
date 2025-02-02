@@ -1,0 +1,13 @@
+[workspace]
+resolver = "2"
+members = ["crates/feed"]
+
+[workspace.dependencies]
+connector = { path = "crates/connector" }
+
+anyhow = "1.0.95"
+reqwest = { version = "0.12", features = ["json"] }
+tokio = { version = "1", features = ["full"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1.0"
+chrono = "0.4"
