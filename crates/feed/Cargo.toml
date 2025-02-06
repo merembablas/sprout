@@ -2,6 +2,11 @@
 name = "feed"
 version = "0.1.0"
 edition = "2021"
+default-run = "feed"
+
+[[bin]]
+name = "feed"
+path = "bin/feed.rs"
 
 [dependencies]
 anyhow = { workspace = true }
@@ -9,4 +14,7 @@ reqwest = { workspace = true }
 tokio = { workspace = true }
 serde = { workspace = true }
 serde_json = { workspace = true }
+serde_qs = { workspace = true }
 chrono = { workspace = true }
+clap = { workspace = true }
+csv = { workspace = true }
